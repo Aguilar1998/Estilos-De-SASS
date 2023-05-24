@@ -14,7 +14,7 @@ Antes de continuar, realiza un backup de tus archivos CSS, ya que se sobre escri
 
 [![Youtube](https://img.shields.io/static/v1?label=&message=ver%20playlist&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://www.youtube.com/watch?v=-VJfeNL-VH0&list=PLJpymL0goBgFAUYDei7CoJCiHjcmgioUt)
 
-## Todos los vídeos de SASS
+## Serie de vídeos recomendados sobre SASS
 
 | Nombre                         | Youtube                                                                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
