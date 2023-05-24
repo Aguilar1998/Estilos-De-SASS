@@ -1,6 +1,6 @@
 .main {
     &__Section {
-        background-color: map-get($map: $colores, $key: "secundario");
+        background-color: map-get($map: $colores, $key: "main");
         @include grid(100%,
 
             repeat(6, 16%), repeat(7, 12%),
@@ -15,62 +15,5 @@
             " .   .     .     .     .   . ",
 
             1rem);
-    }
-}
-
-.main {
-    &__Section {
-
-        &--img-uno,
-        &--img-dos,
-        &--img-tres,
-        &--img-cuatro,
-        &--img-cinco,
-        &--img-seis,
-        &--img-siete {
-            @include ajustarImagen(cover, 100%, 100%)
-        }
-    }
-}
-
-
-
-
-.main {
-    &__Section {
-        &--img-uno {
-            grid-area: img-1;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-dos {
-            grid-area: img-2;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-tres {
-            grid-area: img-3;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-cuatro {
-            grid-area: img-4;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-cinco {
-            grid-area: img-5;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-seis {
-            grid-area: img-6;
-            @include sombre(3px, 3px)
-        }
-
-        &--img-siete {
-            grid-area: img-7;
-            @include sombre(3px, 3px)
-        }
     }
 }

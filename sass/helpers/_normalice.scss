@@ -16,5 +16,5 @@ ul {
 a {
     list-style-type: none;
     text-decoration: none;
-    color: map-get($map: $colores, $key: "secundario");
+    color: map-get($map: $colores__Detalles, $key: "texto");
 }

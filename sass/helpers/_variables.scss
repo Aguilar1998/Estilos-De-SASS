@@ -1,10 +1,52 @@
 // https://colorhunt.co/palette/3c486bf0f0f0f9d949f45050
 
-// MapGeto
-// Es un array que utilizo para almacenar variables
+
+// Variable para definir la tematica
+$fiesta: "";
+
+/* Colores para los textos de la pagina dentro de arrays (map geto)*/
+//////////////////////////////////////////////////////////
+$colores__Detalles: (
+    "texto": #F0F0F0,
+    "alternativo": #3C486B,
+    // planado par expandir
+);
+
+/* Colores para el diseño de la pagina dentro de arrays (map geto)*/
+//////////////////////////////////////////////////////////
 $colores: (
-    "principal": #3C486B,
-    "secundario": #F0F0F0,
-    "enmarcado": #F9D949,
-    "detalles": #F45050,
+    "encabezado": #3C486B,
+    "main": #F0F0F0,
+    "enmarcado": #526D82,
+    "detalles": #9DB2BF,
+);
+$colores__Pascuas: (
+    "encabezado": #654E92,
+    "main": #EBD8B2,
+    "enmarcado": #FFD93D,
+    "detalles": #4F200D,
+);
+$colores__Navidad: (
+    "encabezado": #B70404,
+    "main": #F0F0F0,
+    "enmarcado": #41644A,
+    "detalles": #A0D8B3,
+);
+
+/* Colores redes sociales dentro de arrays (map geto)*/
+//////////////////////////////////////////////////////////
+$colores_Redes: (
+    "linkedin": #068DA9,
+    "instagram": #590696,
+    "facebook": #2B3467,
+    "twitter": #00C1D4,
+    "github": #212A3E,
+);
+
+$colores_Redes-Map: (
+    linkedin: map-get($map: $colores_Redes, $key: "linkedin"),
+    instagram: map-get($map: $colores_Redes, $key: "instagram"),
+    facebook: map-get($map: $colores_Redes, $key: "facebook"),
+    twitter: map-get($map: $colores_Redes, $key: "twitter"),
+    github-square: map-get($map: $colores_Redes, $key: "github"),
 );

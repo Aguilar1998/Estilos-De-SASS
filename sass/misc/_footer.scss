@@ -1,15 +1,14 @@
 .footer {
-    @include flexible(flex, " ", wrap, 100%, 10vh, map-get($colores, "principal"), space-around, center);
+    @include flexible(flex, " ", wrap, 100%, 10vh, "", space-around, center);
 
     & a {
 
         & h3 {
-            color: map-get($map: $colores, $key: "secundario");
             padding: 10px;
 
             &:active {
                 border-radius: 2px;
-                border: 1px solid map-get($map: $colores, $key: "secundario");
+                border: 1px solid map-get($map: $colores__Detalles, $key: "texto");
             }
         }
     }
@@ -20,12 +19,8 @@
 
             & i {
                 margin: 0 1rem;
-                color: map-get($map: $colores, $key: "secundario");
-
-                &:hover {
-                    color: map-get($map: $colores, $key: "enmarcado");
-                }
-
+                color: map-get($map: $colores__Detalles, $key: "texto");
+                font-size: x-large;
             }
         }
     }

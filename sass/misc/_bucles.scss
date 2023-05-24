@@ -1,0 +1,93 @@
+// each
+@each $name,
+$color in $colores_Redes-Map {
+    .fa-#{$name}:hover {
+        color:#{$color};
+        font-size: x-large;
+    }
+}
+
+
+// Colores para la pagina segun la temporada de fiesta
+body {
+
+    .header,
+    .footer {
+
+        /*CONDICION PRINCIPAL*/
+        @if $fiesta =="pascuas" {
+            background-color: map-get($map: $colores__Pascuas, $key: "encabezado");
+        }
+
+        @else if $fiesta =="navidad" {
+            /*otra condicion*/
+            background-color: map-get($map: $colores__Navidad, $key: "encabezado");
+        }
+
+        @else {
+            /*si no es ninguna de las anteriores*/
+            background-color: map-get($map: $colores, $key: "encabezado");
+        }
+
+    }
+
+    .main {
+        &__Section {
+
+            /*CONDICION PRINCIPAL*/
+            @if $fiesta =="pascuas" {
+                background-color: map-get($map: $colores__Pascuas, $key: "main");
+
+                @for $nro from 1 to 9 {
+
+                    .main {
+                        &__Section {
+                            &--img-#{$nro} {
+                                @include ajustarImagen(cover, 100%, 100%);
+                                grid-area: img-#{$nro};
+                                @include sombra__Pascua(3px, 3px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            @else if $fiesta =="navidad" {
+                /*otra condicion*/
+                background-color: map-get($map: $colores__Navidad, $key: "main");
+
+                @for $nro from 1 to 9 {
+
+                    .main {
+                        &__Section {
+                            &--img-#{$nro} {
+                                @include ajustarImagen(cover, 100%, 100%);
+                                grid-area: img-#{$nro};
+                                @include sombra__Navidad(6px, 6px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            @else {
+                /*si no es ninguna de las anteriores*/
+                background-color: map-get($map: $colores, $key: "main");
+
+                @for $nro from 1 to 9 {
+
+                    .main {
+                        &__Section {
+                            &--img-#{$nro} {
+                                @include ajustarImagen(cover, 100%, 100%);
+                                grid-area: img-#{$nro};
+                                @include sombra(3px, 3px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -63,10 +63,26 @@
     }
 }
 
-@mixin sombre($radio, $eje) {
+@mixin sombra($radio, $eje) {
     border-radius: $radio;
     box-shadow: $eje $eje (
-        $eje * 2) map-get($colores, "principal"),
-        (-$eje) (-$eje) ($eje * 2) map-get($colores, "secundario"
+        $eje * 2) map-get($colores, "enmarcado"),
+        (-$eje) (-$eje) ($eje * 2) map-get($colores, "detalles"
+    );
+}
+
+@mixin sombra__Pascua($radio, $eje) {
+    border-radius: $radio;
+    box-shadow: $eje $eje (
+        $eje * 2) map-get($colores__Pascuas, "enmarcado"),
+        (-$eje) (-$eje) ($eje * 2) map-get($colores__Pascuas, "detalles"
+    );
+}
+
+@mixin sombra__Navidad($radio, $eje) {
+    border-radius: $radio;
+    box-shadow: $eje $eje (
+        $eje * 2) map-get($colores__Navidad, "enmarcado"),
+        (-$eje) (-$eje) ($eje * 2) map-get($colores__Navidad, "detalles"
     );
 }

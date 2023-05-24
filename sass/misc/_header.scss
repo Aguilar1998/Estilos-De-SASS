@@ -1,5 +1,5 @@
 .header {
-    @include flexible(flex, "", wrap, 100%, 10vh, map-get($map: $colores, $key: "principal"), space-around, center);
+    @include flexible(flex, "", wrap, 100%, 10vh, map-get($map: $colores__Detalles, $key: "texto"), space-around, center);
 
     @include responsive() {
         height: max-content;
@@ -18,11 +18,6 @@
 
         & a {
             margin: 0 1rem;
-            color: map-get($map: $colores, $key: "secundario");
-
-            &:hover {
-                border-bottom: 1px solid map-get($map: $colores, $key: "detalles");
-            }
         }
     }
 
