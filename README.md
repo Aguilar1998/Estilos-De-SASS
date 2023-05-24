@@ -2,8 +2,6 @@
 
 https://nodejs.org/en
 
-Antes de continuar, realiza un backup de tus archivos CSS, ya que se sobre escribirán cuando empieces a usar SASS.
-
 ![Imagen del proyecto](https://github.com/eduardofierropro/SASS-y-SCSS-Aumenta-tu-nivel-como-Frontend/blob/main/assets/home1.png)
 
 # SASS: Mixins, variables, Nesting Flex, Grid y Media Queries
