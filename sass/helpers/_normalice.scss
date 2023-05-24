@@ -1,0 +1,20 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* normalizar los enlaces para que no tengan estilos y un color especifico */
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: map-get($map: $colores, $key: "secundario");
+}

@@ -1,0 +1,72 @@
+// Mixins 
+
+@mixin ajustarImagen($fit, $w, $h) {
+    object-fit: $fit;
+    width: $w;
+    height: $h;
+}
+
+@mixin responsive ($medida: 480px) {
+    @media screen and(max-width: $medida) {
+        @content;
+    }
+}
+
+@mixin flexible($dis, $direction, $wrap, $w, $h, $bg, $jc, $aling) {
+    display: $dis;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    width: $w;
+    height: $h;
+    background-color: $bg;
+    justify-content: $jc;
+    align-items: $aling;
+}
+
+@mixin grid($h, $columnas, $rows, $area, $espacio) {
+    height: $h;
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $rows;
+    grid-template-areas: $area;
+    gap: $espacio;
+
+    @include responsive(760px) {
+        // Otra manera de llamar a las columnas y filas
+        /* Primer paremetro son las row  -> luego son las columns */
+        grid-template: 20px repeat(7, 1fr) 25px / 1rem repeat(3, 1fr) 1rem;
+        grid-template-areas:
+            " .   .     .     .    . "
+            " . img-1 img-2 img-2  . "
+            " . img-1 img-3 img-3  . "
+            " . img-4 img-4 img-4  . "
+            " . img-4 img-4 img-4  . "
+            " . img-5 img-5 img-5  . "
+            " . img-6 img-6 img-7  . "
+            " . img-6 img-6 img-7  . "
+            " .   .     .     .    . "
+        ;
+    }
+
+    @include responsive() {
+        grid-template: repeat(7, 1fr) / repeat(1, 100%);
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+        ;
+        padding: 20px 10px;
+    }
+}
+
+@mixin sombre($radio, $eje) {
+    border-radius: $radio;
+    box-shadow: $eje $eje (
+        $eje * 2) map-get($colores, "principal"),
+        (-$eje) (-$eje) ($eje * 2) map-get($colores, "secundario"
+    );
+}

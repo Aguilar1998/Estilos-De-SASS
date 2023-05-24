@@ -1,0 +1,32 @@
+.footer {
+    @include flexible(flex, " ", wrap, 100%, 10vh, map-get($colores, "principal"), space-around, center);
+
+    & a {
+
+        & h3 {
+            color: map-get($map: $colores, $key: "secundario");
+            padding: 10px;
+
+            &:active {
+                border-radius: 2px;
+                border: 1px solid map-get($map: $colores, $key: "secundario");
+            }
+        }
+    }
+
+    &__Nav {
+
+        & a {
+
+            & i {
+                margin: 0 1rem;
+                color: map-get($map: $colores, $key: "secundario");
+
+                &:hover {
+                    color: map-get($map: $colores, $key: "enmarcado");
+                }
+
+            }
+        }
+    }
+}

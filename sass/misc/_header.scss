@@ -1,0 +1,29 @@
+.header {
+    @include flexible(flex, "", wrap, 100%, 10vh, map-get($map: $colores, $key: "principal"), space-around, center);
+
+    @include responsive() {
+        height: max-content;
+    }
+
+    & img {
+        height: 60%;
+        border-radius: 100%;
+
+        @include responsive() {
+            height: 5vh;
+        }
+    }
+
+    & nav {
+
+        & a {
+            margin: 0 1rem;
+            color: map-get($map: $colores, $key: "secundario");
+
+            &:hover {
+                border-bottom: 1px solid map-get($map: $colores, $key: "detalles");
+            }
+        }
+    }
+
+}
