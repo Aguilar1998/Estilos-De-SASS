@@ -12,8 +12,6 @@ https://nodejs.org/en
 - Crea tu propio Mixin
 - Anidación y Selector &
 
-[![Youtube](https://img.shields.io/static/v1?label=&message=ver%20playlist&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://www.youtube.com/watch?v=-VJfeNL-VH0&list=PLJpymL0goBgFAUYDei7CoJCiHjcmgioUt)
-
 ## 👉🏽 Para descargar este proyecto::
 
 ```
