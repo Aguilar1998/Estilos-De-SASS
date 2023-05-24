@@ -6,19 +6,15 @@ Antes de continuar, realiza un backup de tus archivos CSS, ya que se sobre escri
 
 # SASS: Mixins, variables, Nesting Flex, Grid y Media Queries
 
-Este es el repositorio de código sobre la serie de vídeos hablando sobre SASS y SCSS donde hemos hablado de:
-
 - Variables
 - Mixins
 - Mixins como Neomorfismo, Flex o Media
 - Crea tu propio Mixin
 - Anidación y Selector &
 
-Si te ha gustado o te ha servido coméntalo en un directo o sígueme por Twitch y Youtube 😊
-
 [![Youtube](https://img.shields.io/static/v1?label=&message=ver%20playlist&color=FF0000&logo=youtube&logoColor=white&style=for-the-badge)](https://www.youtube.com/watch?v=-VJfeNL-VH0&list=PLJpymL0goBgFAUYDei7CoJCiHjcmgioUt)
 
-## 💅 Todos los vídeos de SASS
+## Todos los vídeos de SASS
 
 | Nombre                         | Youtube                                                                                                                                                               |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
