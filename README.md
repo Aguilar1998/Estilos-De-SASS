@@ -2,9 +2,7 @@
 
 https://nodejs.org/en
 
-![Imagen del proyecto](https://github.com/eduardofierropro/SASS-y-SCSS-Aumenta-tu-nivel-como-Frontend/blob/main/assets/home1.png)
-
-# SASS: Mixins, variables, Nesting Flex, Grid y Media Queries
+# SASS:
 
 - Variables
 - Mixins

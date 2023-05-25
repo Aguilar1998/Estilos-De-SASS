@@ -1,6 +1,6 @@
-// each
+// each para los iconos de redes sociales
 @each $name,
-$color in $colores_Redes-Map {
+$color in $colores_Redes {
     .fa-#{$name}:hover {
         color:#{$color};
         font-size: x-large;

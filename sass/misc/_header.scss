@@ -5,12 +5,13 @@
         height: max-content;
     }
 
-    & img {
-        height: 60%;
-        border-radius: 100%;
+    & h1 {
+        color: map-get($map: $colores__Detalles, $key: "texto");
 
         @include responsive() {
-            height: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
         }
     }
 
