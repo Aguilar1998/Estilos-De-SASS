@@ -150,7 +150,7 @@ body .main__Section {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 16%);
-  grid-template-rows: repeat(7, 12%);
+  grid-template-rows: repeat(7, 1fr);
   grid-template-areas: " .   .     .     .     .   . " " . img-1 img-2 img-2 img-5 . " " . img-1 img-3 img-4 img-5 . " " . img-1 img-3 img-4 img-5 . " " . img-1 img-6 img-6 img-6 . " " . img-7 img-7 img-7 img-7 . " " . img-7 img-7 img-7 img-7 . " " .   .     .     .     .   . ";
   gap: 1rem; }
   @media screen and (max-width: 760px) {
@@ -163,3 +163,12 @@ body .main__Section {
       grid-template: repeat(7, 1fr)/repeat(1, 100%);
       grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6" "img-7";
       padding: 20px 10px; } }
+
+.main .main__Section .main__Section--img-7 p {
+  /* divide las columnas del texto, no se recomienda en textos muy largos*/
+  column-count: 3;
+  column-gap: 2rem;
+  /* borde entre las columnas     palabra clave / estilo / color */
+  column-rule: 2px solid red;
+  height: 100%;
+  padding: 4rem; }
